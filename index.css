@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 *{
     margin: 0;
@@ -11,35 +10,37 @@ body{
     font-family: 'VT323', monospace;
     font-size: 1.5rem;
     display: grid;
-    justify-content: center;
-    background-color: #eee;
-    
+    justify-content: space-between;
+    background-color: #eee; 
+    justify-items: center;
 }
-nav{
-    
+
+nav{    
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
     width: 100%;  
-    position: fixed;
+    position: sticky;
     background-color: rgb(255, 255, 255);
-    
 }
+
 .logo{
     margin-left: 50px;
 }
+
 .navList ul{
     display: flex;
     margin-right: 50px;
 }
+
 li{
     list-style: none;
     padding: 5px;
-    margin-right: 3px;
-    
+    margin-right: 3px;    
 }
+
 a{
     text-decoration: none;
     border-radius: 0px;
@@ -47,15 +48,16 @@ a{
     color: rgba(0, 0, 0, 0.562);
     font-weight: 500;
 }
+
 li a:hover{
     background-color: #020873;
     color:#ffffffda ;
 }
+
 img{
     width: 225px;
     height: auto;
-    margin-right: 10px;
-    
+    margin-right: 10px;    
 }
 
 .logo{
@@ -66,22 +68,21 @@ img{
 
 .home{
     height: 100vh;    
- 
     padding: 50px;
-   
 }
+
 .galeria{
  height: 100vh;
- 
 }
+
 .songs{
-    height: 100vh;    
-    
+    height: 100vh;        
 }
-.reyes{
-    height: 100vh;
-   
+
+.members{
+    height: 100vh;   
 }
+
 .contenedor{
     margin-top: 100px;
     width: 100%;    
@@ -94,6 +95,7 @@ p{
     padding: 20px;
     margin-right: 50px;
 }
+
 .Foto{
     width: 500px;
     height: auto;
@@ -107,9 +109,8 @@ p{
     display: flex;
     width:1000px;
     height: 450px;
-    
-    
 }
+
 .section_galery .img_galery{
     width: 0;
     flex-grow: 1;
@@ -118,23 +119,22 @@ p{
 }
 
 .section_galery .img_galery:hover{
-cursor: crosshair;
-width: 400px;
-opacity: 1;
+    cursor: crosshair;
+    width: 400px;
+    opacity: 1;
 }
 
 .contenedor_galery{
     width: 100%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
+
 .contenedor_songs{
-    margin-top: 225px;
+    margin-top: 170px;
     width: 100%;    
-    display: flex;
     align-items: center;  
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .contenedor_tabla{
@@ -145,9 +145,9 @@ opacity: 1;
 
 table{
     width: 60%;
-    font-size: smaller;
-   
+    font-size: smaller;   
 }
+
 th, td{
     width: 5%;
     text-align: center;
@@ -155,11 +155,13 @@ th, td{
     padding: 0.3rem;
     caption-side: bottom;
 }
+
 caption{
     padding: 0.3rem;
     color: #fff;
     background: #000;
 }
+
 th{
     background-color: #02087300;
     color: white;
@@ -170,6 +172,7 @@ footer{
     padding: 50px 0px;
     color: #020873;
 }
+
 .container_footer{
     display: flex;
     flex-wrap: wrap;
@@ -178,53 +181,60 @@ footer{
     margin: auto;
     margin-top: 100px;
 }
+
 .box_footer{
     display: flex;
     flex-direction: column;
     padding: 1px;
 }
+
 .box_footer .logo img{
     width: 200px;
-    border-radius: 00px;
-    
+    border-radius: 00px;    
 }
+
 .box_footer .terminos{
     max-width: 550px;    
     font-weight: 500;
     color: #7a7a7a;
     font-size: smaller;
 }
+
 .box_footer h2{
     margin-bottom: 10px;
     color: #343434;
     font-weight: 700;
     font-size: smaller;
 }
+
 .box_footer a{    
     color: #7a7a7a;
     font-weight: 400;
     font-size: smaller;
 }
+
 .box_footer a:hover{
     opacity: 0.8;
 }
+
 .box_footer a .fa-brands{
     font-size: 20px;
-    margin-right: 5px;
-    
+    margin-right: 5px;    
 }
+
 .box_copyrigth{
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 20px;
 }
+
 .box_copyrigth p{
     margin-top: 5px;
     color: #7a7a7a;
     font-size: smaller;
-
 }
+
 .box_copyrigth hr{
     border: none;
     height: 1px;
@@ -232,112 +242,58 @@ footer{
 }
 
 
-@media (max-width:1000px) {   
+@media (max-width:320px) {   
     nav{
-        height: 60px;
-    }
-    .logo{
-        margin-left: 10px;
-    }
-    .navList ul{       
-        margin-right: 10px;
-    }
-    li{
-        padding: 2px;
-        margin-right: 2px;        
-    }
-    a{
-        font-size: medium;
-        font-weight: 200;
-    }
-    img{
-        width: 40px;
-        height: auto;
-        margin-right: 10px;
-        
-    }
-    span{
-        font-size: x-large;    
-        color: #020873;
-    }
-    
-    .contenedor{
-        margin-top: 8px;
-       
-        display: flex;
-
-    }
-    .Foto{
-       
-        width: 300px;
-        height: auto;   
-        
-    }
-    p{
-        text-align: justify;
-        padding: 10px;
-        margin-right: 10px;
-    }
-    .contenedor_members{
-        margin-top: 60px;     
-        
-    }
-    .contenedor_historia{
-        margin-top: 150px; 
-        
-        
-    }
-    .p_historia{
-        
-        padding-left: 20px;
-        padding-right: 20px;    
+        height: 36px;
+        width: 100%;
+        justify-self: normal;
     }
 
-    table{
-        margin-top: 80px;
-        width: 85%;
-        font-size: medium;         
+    .body{
+        font-size: 1.5rem;
+        display: grid;
+        justify-content: center;
+        justify-items: stretch;
+        background-color: #eee; 
     }
-   
-    
-}
-@media (max-width:600px) {
-    
-   
-    nav{
-        width: 100vw;
-        height: 50px;
-        font-size: xx-small;   
-        position: fixed;
-       
-    }
-    .title_logo{
-        font-size: x-small;
-    }
+
     .logo{
-        margin-left: 2px;
-        font-size: xx-small;
-       
+        margin-left: 20px;
     }
+
     .navList ul{       
-        margin-right: 2px;
-        
+        margin-right: 0.5px;
+        justify-items: center;
     }
+
+    nav{       
+        align-items: stretch;
+    }
+
     li{
         padding: 2px;
-        margin-right: 2px; 
-             
+        margin-right: 0px;   
+        justify-content: center;
     }
+
+    li a:hover{
+       padding: 12px;
+       justify-content: normal;
+    }
+
     a{
-        font-size:xx-small;
+        font-size: small;
         font-weight: 100;
+        padding: 5px;
     }
+
     img{
-        width: 30px;
+        width: 80px;
         height: auto;
-        margin-right: 10px;
-        
+
+        margin-right: 0px;    
     }
+
     span{
         font-size: x-large;    
         color: #020873;
@@ -346,49 +302,66 @@ footer{
     .contenedor{
         width: 100vw;
         height: 100vh;
-        margin-top: 1px;       
+        margin-top: 10px;       
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        
-
+        margin-right: 2px;
+        justify-content: normal;
+        align-items: baseline;
     }
+
     .Foto{
         margin: 0;
         margin-bottom: 20px;
         width: 90vw;
-        height: auto;   
-        
+        align-content: center;
+        height: auto;
     }
+
     p{
+       width: 100vw;       
+       font-size: large;        
+       margin-right: 10px;        
+       margin-left: 10px;   
+    }
+
+    .contenedor_members{
+        width: 100%;     
+        justify-content: center;
+    }
+
+    .contenedor_songs{
         width: 100vw;
-        font-size: large;
-        margin-right: 10px;
-        margin-left: 10px;
+        height: 100vh;
+        margin-top: 15px; 
+        margin-bottom: 120px ;      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    h1{
-        font-size: larger;
-    }
-    .members{
-        margin-top: 50px;
-        margin-left: 50px;
-        width: 100vw;
-      
-    }
-    .historia{
-        margin-left: 50px;
+    
+    .img_galery{
+       size: 2px;
+
 
     }
-    .reyes{
-        margin-top: 100px;
-        margin-left: 50px;
 
-    }
     table{
-        margin-top: 60px;
-        width: 70%;
-        font-size: small;         
+     margin-top: 130px;
+     margin-bottom: 0px;
+    width: 88%;
+    font-size: small;  
+    justify-content: center;
+    display: block;
+    overflow-x: auto;
     }
+
+    .galery{
+        margin-top: 120px;        
+        margin-left: 50px;        
+        width: 100vw;
+
+    }
+
 }
