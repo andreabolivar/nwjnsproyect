@@ -242,7 +242,7 @@ footer{
 }
 
 
-@media (max-width:720px) {   
+@media (max-width:1024px) {   
     nav{
         height: 30px;
         width: 100%;
