@@ -22,7 +22,7 @@ nav{
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
     width: 100%;  
-    position: fixed;
+    position: sticky;
     background-color: rgb(255, 255, 255);
 }
 
@@ -242,13 +242,11 @@ footer{
 }
 
 
-@media (max-width:1024px) {   
+@media (max-width:320px) {   
     nav{
         height: 30px;
         width: 100%;
         justify-self: normal;
-        position: sticky;
-        
     }
 
     .body{
