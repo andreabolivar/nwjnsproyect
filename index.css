@@ -242,12 +242,13 @@ footer{
 }
 
 
-@media (max-width:320px) {   
+@media (max-width:720px) {   
     nav{
         height: 30px;
         width: 100%;
         justify-self: normal;
         position: sticky;
+        
     }
 
     .body{
